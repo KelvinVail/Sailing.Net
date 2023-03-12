@@ -35,6 +35,16 @@ public sealed class ErrorResultTests
     }
 
     [Fact]
+    public void TwoErrorsWithDifferentErrorCodeAreNotEqual()
+    {
+        var error1 = ErrorResult.Empty();
+        var error2 = ErrorResult.Invalid();
+
+        error1.Should().NotBe(error2);
+        error1.Should().NotBeRankedEquallyTo(error2);
+    }
+
+    [Fact]
     public void InvalidErrorReturnsDefaultValues()
     {
         var error = ErrorResult.Invalid();
