@@ -14,6 +14,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="FluentAssertions" Version="6.10.0" />
 		<PackageReference Include="SonarAnalyzer.CSharp" Version="8.54.0.64047">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -39,6 +40,10 @@
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 			<PrivateAssets>all</PrivateAssets>
 		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Sailing.Domain\Sailing.Domain.csproj" />
 	</ItemGroup>
 
 </Project>

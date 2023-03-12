@@ -12,6 +12,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="Humanizer.Core" Version="2.14.1" />
 		<PackageReference Include="SonarAnalyzer.CSharp" Version="8.54.0.64047">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
